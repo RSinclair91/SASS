@@ -1,3 +1,7 @@
+*{display: flex;
+flex-direction: column;
+padding: 0;}
+
 body {
   display: flex;
   flex-direction: column;
@@ -66,7 +70,11 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-row: repeat(5, 1fr);
-  grid-template-areas: "menu menu menu menu menu" "logo logo logo logo logo" "textoindex textoindex textoindex textoindex textoindex" "textoindex textoindex textoindex textoindex textoindex" "footer footer footer footer footer"; }
+  grid-template-areas: "menu menu menu menu menu"
+ "logo logo logo logo logo"
+ "textoindex textoindex textoindex textoindex textoindex"
+ "textoindex textoindex textoindex textoindex textoindex"
+ "footer footer footer footer footer"; }
 
 .menu {
   grid-area: menu; }
@@ -84,7 +92,11 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: repeat(5, 1fr);
-  grid-template-areas: "menu menu menu" "logo logo logo" "imagenes imagenes imagenes" "imagenes imagenes imagenes" "footer footer footer"; }
+  grid-template-areas: "menu menu menu"
+ "logo logo logo"
+ "imagenes imagenes imagenes"
+ "imagenes imagenes imagenes"
+ "footer footer footer"; }
 
 .imagenes {
   grid-area: imagenes; }
@@ -93,7 +105,11 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-row: repeat(5, 1fr);
-  grid-template-areas: "menu menu menu menu menu" "logo logo logo logo logo" "cuadro cuadro cuadro cuadro cuadro" "cuadro cuadro cuadro cuadro cuadro" "footer footer footer footer footer"; }
+  grid-template-areas: "menu menu menu menu menu"
+ "logo logo logo logo logo"
+ "cuadro cuadro cuadro cuadro cuadro"
+ "cuadro cuadro cuadro cuadro cuadro"
+ "footer footer footer footer footer"; }
 
 .cuadro {
   grid-area: cuadro; }
@@ -101,10 +117,18 @@ img {
 /*RESPONSIVE*/
 @media only screen and (min-width: 480px) {
   .contendor {
-    grid-template-areas: "menu menu" "logo logo" "textoindex textoindex" "textoindex textoindex" "footer footer"; }
+    grid-template-areas: "menu menu"
+ "logo logo"
+ "textoindex textoindex"
+ "textoindex textoindex"
+ "footer footer"; }
   .textoindex {
     font-size: 1.8rem; }
   .imagenes {
-    grid-template-areas: "menu menu" "logo logo" "imagenes" "imagenes" "footer footer";
+    grid-template-areas: "menu menu"
+ "logo logo"
+ "imagenes"
+ "imagenes"
+ "footer footer";
     align-items: center;
     display: block; } }
